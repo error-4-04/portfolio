@@ -120,7 +120,7 @@ export default function Home({ blogs, profile}) {
               </h1>
               <div className="flex flex-col justify-center pt-3 sm:flex-row sm:pt-5 lg:justify-start">
                 <div className="flex items-center justify-center pl-0 sm:justify-start md:pl-1">
-                  <p className="font-body text-lg uppercase text-white">Let's connect</p>
+                  <p className="font-body text-lg uppercase text-white">Lets connect</p>
                   <div className="hidden sm:block">
                     <i className="bx bx-chevron-right text-3xl text-yellow"></i>
                   </div>
@@ -156,7 +156,7 @@ export default function Home({ blogs, profile}) {
               Who am I?
             </h2>
             <h4 className="pt-6 font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl">
-              I'm Hammad Haider, a Web Designer & Developer
+              Im Hammad Haider, a Web Designer & Developer
             </h4>
             <p className="pt-6 font-body leading-relaxed text-grey-20">
               I Love To Create and get User Experience through my Web Layouts and Designs
@@ -234,7 +234,7 @@ export default function Home({ blogs, profile}) {
 
       <div className="container py-16 md:py-20" id="services">
         <h2 className="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl">
-          Here's what I'm good at
+          Here`&apos;`s what I`&apos;`m good at
         </h2>
         <h3 className="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl">
           These are the services I Offer
@@ -303,7 +303,7 @@ export default function Home({ blogs, profile}) {
           Check out my Portfolio
         </h2>
         <h3 className="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl">
-          Here's what I have done with the past
+          Here`&apos;`s what I have done with the past
         </h3>
 
         <div className="mx-auto grid w-full grid-cols-1 gap-8 pt-12 sm:w-3/4 md:gap-10 lg:w-full lg:grid-cols-2">
@@ -414,7 +414,8 @@ export default function Home({ blogs, profile}) {
 
             {blogs.map((item) => { 
               return <Link key={item.slug.current} href={"/blog/" + item.slug.current} className="shadow">
-              <div><div style={{"backgroundImage": `url(${builder.image(item.blogimage).width(200).url() || '/assets/img/post-01.png'})`}}
+              <div>
+                <div style={{"backgroundImage": `url(${builder.image(item.blogimage).width(200).url() || '/assets/img/post-01.png'})`}}
                 className="group relative h-72 bg-cover bg-center bg-no-repeat sm:h-84 lg:h-64 xl:h-72">
                 <span
                   className="absolute inset-0 block bg-gradient-to-b from-blog-gradient-from to-blog-gradient-to bg-cover bg-center bg-no-repeat opacity-10 transition-opacity group-hover:opacity-50"></span>
@@ -425,7 +426,8 @@ export default function Home({ blogs, profile}) {
               <div className="bg-white py-6 px-5 xl:py-8">
                 <span className="block font-body text-lg font-semibold text-black"> {item.title}</span>
                 <span className="block pt-2 font-body text-grey-20">{item.metadesc}</span>
-              </div></div>
+              </div>
+             </div>
             </Link>
              })}
           </div>
@@ -434,7 +436,7 @@ export default function Home({ blogs, profile}) {
 
       <div className="container py-16 md:py-20" id="contact">
         <h2 className="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl">
-          Here's a contact form
+          Here`&apos;`s a contact form
         </h2>
         <h4 className="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl">
           Have Any Questions?
@@ -521,7 +523,7 @@ export default function Home({ blogs, profile}) {
           <h3
             className="text-center font-header text-3xl uppercase leading-tight tracking-wide text-white sm:text-4xl lg:text-5xl">
             Keep <span className="font-bold">up-to-date</span> <br />
-            with what I'm up to
+            with what I`&apos;`m up to
           </h3>
           <form className="mt-6 flex flex-col justify-center sm:flex-row">
             <input className="w-full rounded px-4 py-3 font-body text-black sm:w-2/5 sm:py-4 lg:w-1/3" type="text"
