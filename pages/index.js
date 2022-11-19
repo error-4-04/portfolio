@@ -32,7 +32,7 @@ export default function Home({ blogs, profile}) {
       <Head>
         <meta charset="utf-8" />
 
-        <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+        <meta content="IE=edge,chrome=1" httpEquiv="X-UA-Compatible" />
 
         <meta
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -69,7 +69,7 @@ export default function Home({ blogs, profile}) {
         <meta name="twitter:site" content="@tailwindmade" />
 
         <link
-          crossorigin="crossorigin"
+          crossOrigin={"crossorigin"}
           href="https://fonts.gstatic.com"
           rel="preconnect" />
 
@@ -80,17 +80,17 @@ export default function Home({ blogs, profile}) {
 
         <link
           href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@400;500;600;700&display=swap"
-          rel="stylesheet" />
+          rel={"stylesheet"}/>
 
         <link
           href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
-          rel="stylesheet" />
+          rel={"stylesheet"} />
 
         <link
-          crossorigin="anonymous"
+          crossOrigin="anonymous"
           href="/assets/styles/main.min.css"
           media="screen"
-          rel="stylesheet" />
+          rel={"stylesheet"}/>
 
         <script
           defer
@@ -112,7 +112,7 @@ export default function Home({ blogs, profile}) {
         <div className="container relative z-30 pt-20 pb-12 sm:pt-56 sm:pb-48 lg:pt-64 lg:pb-48">
           <div className="flex flex-col items-center justify-center lg:flex-row">
             <div className="rounded-full border-8 border-primary shadow-xl">
-              <img src={builder.image(profile.image).width(200).url()} className="h-48 rounded-full sm:h-56" alt="author" />
+             <Image src={builder.image(profile.image).width(200).url()} className="h-48 rounded-full sm:h-56" alt="author" />
             </div>
             <div className="pt-8 sm:pt-10 lg:pl-8 lg:pt-0">
               <h1 className="text-center font-header text-4xl text-white sm:text-left sm:text-5xl md:text-6xl">
@@ -126,17 +126,17 @@ export default function Home({ blogs, profile}) {
                   </div>
                 </div>
                 <div className="flex items-center justify-center pt-5 pl-2 sm:justify-start sm:pt-0">
-                  <a href="https://web.facebook.com/hammad.haider.96387" target={"_blank"}>
+                  <a href="https://web.facebook.com/hammad.haider.96387" target={"_blank"} rel={"noreferrer"}>
                     <i className="bx bxl-facebook-square text-2xl text-white hover:text-yellow"></i>
                   </a>
              
-                  <a href="https://dribbble.com/ERROR_4O4" target={"_blank"} className="pl-4">
+                  <a href="https://dribbble.com/ERROR_4O4" target={"_blank"}  rel={"noreferrer"} className="pl-4">
                     <i className="bx bxl-dribbble text-2xl text-white hover:text-yellow"></i>
                   </a>
-                  <a href="https://www.linkedin.com/in/hammad-haider-711a19246/" target={"_blank"} className="pl-4">
+                  <a href="https://www.linkedin.com/in/hammad-haider-711a19246/" target={"_blank"}  rel={"noreferrer"} className="pl-4">
                     <i className="bx bxl-linkedin text-2xl text-white hover:text-yellow"></i>
                   </a>
-                  <a href="https://www.instagram.com/hammadhaider.404/" className="pl-4" target={"_blank"}>
+                  <a href="https://www.instagram.com/hammadhaider.404/" className="pl-4" target={"_blank"}  rel={"noreferrer"}>
                     <i className="bx bxl-instagram text-2xl text-white hover:text-yellow"></i>
                   </a>
                 </div>
@@ -171,17 +171,17 @@ export default function Home({ blogs, profile}) {
                 </div>
               </div>
               <div className="flex items-center justify-center pt-5 pl-2 sm:justify-start sm:pt-0">
-                <a href="https://web.facebook.com/hammad.haider.96387" target={"_blank"}>
+                <a href="https://web.facebook.com/hammad.haider.96387" target={"_blank"}  rel={"noreferrer"}>
                   <i className="bx bxl-facebook-square text-2xl text-primary hover:text-yellow"></i>
                 </a>
               
-                <a href="https://dribbble.com/ERROR_4O4" className="pl-4" target={"_blank"}>
+                <a href="https://dribbble.com/ERROR_4O4" className="pl-4" target={"_blank"}  rel={"noreferrer"}>
                   <i className="bx bxl-dribbble text-2xl text-primary hover:text-yellow"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/hammad-haider-711a19246/" className="pl-4" target={"_blank"}>
+                <a href="https://www.linkedin.com/in/hammad-haider-711a19246/" className="pl-4" target={"_blank"}  rel={"noreferrer"}>
                   <i className="bx bxl-linkedin text-2xl text-primary hover:text-yellow"></i>
                 </a>
-                <a href="https://www.instagram.com/hammadhaider.404/" className="pl-4" target={"_blank"}>
+                <a href="https://www.instagram.com/hammadhaider.404/" className="pl-4" target={"_blank"}  rel={"noreferrer"}>
                   <i className="bx bxl-instagram text-2xl text-primary hover:text-yellow"></i>
                 </a>
               </div>
@@ -244,10 +244,10 @@ export default function Home({ blogs, profile}) {
           <div className="group rounded px-8 py-12 shadow hover:bg-primary">
             <div className="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
               <div className="hidden group-hover:block">
-                <img src="/assets/img/icon-development-white.svg" alt="development icon" />
+               <Image src="/assets/img/icon-development-white.svg" alt="development icon" />
               </div>
               <div className="block group-hover:hidden">
-                <img src="/assets/img/icon-development-black.svg" alt="development icon" />
+               <Image src="/assets/img/icon-development-black.svg" alt="development icon" />
               </div>
             </div>
             <div className="text-center">
@@ -262,10 +262,10 @@ export default function Home({ blogs, profile}) {
           <div className="group rounded px-8 py-12 shadow hover:bg-primary">
             <div className="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
               <div className="hidden group-hover:block">
-                <img src="/assets/img/icon-content-white.svg" alt="content marketing icon" />
+               <Image src="/assets/img/icon-content-white.svg" alt="content marketing icon" />
               </div>
               <div className="block group-hover:hidden">
-                <img src="/assets/img/icon-content-black.svg" alt="content marketing icon" />
+               <Image src="/assets/img/icon-content-black.svg" alt="content marketing icon" />
               </div>
             </div>
             <div className="text-center">
@@ -280,10 +280,10 @@ export default function Home({ blogs, profile}) {
           <div className="group rounded px-8 py-12 shadow hover:bg-primary">
             <div className="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
               <div className="hidden group-hover:block">
-                <img src="/assets/img/icon-graphics-white.svg" alt="Graphic Design icon" />
+               <Image src="/assets/img/icon-graphics-white.svg" alt="Graphic Design icon" />
               </div>
               <div className="block group-hover:hidden">
-                <img src="/assets/img/icon-graphics-black.svg" alt="Graphic Design icon" />
+               <Image src="/assets/img/icon-graphics-black.svg" alt="Graphic Design icon" />
               </div>
             </div>
             <div className="text-center">
@@ -308,10 +308,10 @@ export default function Home({ blogs, profile}) {
 
         <div className="mx-auto grid w-full grid-cols-1 gap-8 pt-12 sm:w-3/4 md:gap-10 lg:w-full lg:grid-cols-2">
           <a href="https://7bugstoothpicks.surge.sh/" className="mx-auto transform transition-all hover:scale-105 md:mx-0">
-            <img src="/assets/img/portfolio-a.jpeg" className="w-full shadow" alt="portfolio image" />
+           <Image src="/assets/img/portfolio-a.jpeg" className="w-full shadow" alt="portfolio image" />
           </a>
           <a href="https://is-garments.surge.sh/" className="mx-auto transform transition-all hover:scale-105 md:mx-0">
-            <img src="/assets/img/portfolio-s.jpeg" className="w-full shadow" alt="portfolio image" />
+           <Image src="/assets/img/portfolio-s.jpeg" className="w-full shadow" alt="portfolio image" />
           </a>
         </div>
       </div>
@@ -324,10 +324,10 @@ export default function Home({ blogs, profile}) {
             </h2>
             <div className="flex flex-wrap items-center justify-center pt-4 sm:pt-4">
               <span className="m-8 block">
-                <img src="/assets/img/logo.jpg" alt="client logo" className="mx-auto block h-24 w-auto" />
+               <Image src="/assets/img/logo.jpg" alt="client logo" className="mx-auto block h-24 w-auto" />
               </span>
               <span className="m-8 block">
-                <img src="/assets/img/logo6.jpeg" alt="client logo" className="mx-auto block h-24 w-auto" />
+               <Image src="/assets/img/logo6.jpeg" alt="client logo" className="mx-auto block h-24 w-auto" />
               </span>
             </div>
           </div>
@@ -341,7 +341,7 @@ export default function Home({ blogs, profile}) {
             <div className="grid grid-cols-2 gap-5 md:gap-8 xl:grid-cols-4 xl:gap-5">
               <div className="flex flex-col items-center justify-center text-center md:flex-row md:text-left">
                 <div>
-                  <img src="/assets/img/icon-project.svg" className="mx-auto h-12 w-auto md:h-20" alt="icon project" />
+                 <Image src="/assets/img/icon-project.svg" className="mx-auto h-12 w-auto md:h-20" alt="icon project" />
                 </div>
                 <div className="pt-5 md:pl-5 md:pt-0">
                   <h1 className="font-body text-2xl font-bold text-primary md:text-4xl">
@@ -355,7 +355,7 @@ export default function Home({ blogs, profile}) {
 
               <div className="flex flex-col items-center justify-center text-center md:flex-row md:text-left">
                 <div>
-                  <img src="/assets/img/icon-award.svg" className="mx-auto h-12 w-auto md:h-20" alt="icon award" />
+                 <Image src="/assets/img/icon-award.svg" className="mx-auto h-12 w-auto md:h-20" alt="icon award" />
                 </div>
                 <div className="pt-5 md:pl-5 md:pt-0">
                   <h1 className="font-body text-2xl font-bold text-primary md:text-4xl">
@@ -370,7 +370,7 @@ export default function Home({ blogs, profile}) {
               <div
                 className="mt-6 flex flex-col items-center justify-center text-center md:mt-10 md:flex-row md:text-left lg:mt-0">
                 <div>
-                  <img src="/assets/img/icon-happy.svg" className="mx-auto h-12 w-auto md:h-20"
+                 <Image src="/assets/img/icon-happy.svg" className="mx-auto h-12 w-auto md:h-20"
                     alt="icon happy clients" />
                 </div>
                 <div className="pt-5 md:pl-5 md:pt-0">
@@ -386,7 +386,7 @@ export default function Home({ blogs, profile}) {
               <div
                 className="mt-6 flex flex-col items-center justify-center text-center md:mt-10 md:flex-row md:text-left lg:mt-0">
                 <div>
-                  <img src="/assets/img/icon-puzzle.svg" className="mx-auto h-12 w-auto md:h-20" alt="icon puzzle" />
+                 <Image src="/assets/img/icon-puzzle.svg" className="mx-auto h-12 w-auto md:h-20" alt="icon puzzle" />
                 </div>
                 <div className="pt-5 md:pl-5 md:pt-0">
                   <h1 className="font-body text-2xl font-bold text-primary md:text-4xl">
@@ -539,16 +539,16 @@ export default function Home({ blogs, profile}) {
               © Copyright 2022. All right reserved, Hammad Haider.
             </p>
             <div className="flex items-center justify-center pt-5 sm:justify-start sm:pt-0">
-              <a href="https://web.facebook.com/hammad.haider.96387" target={"_blank"}>
+              <a href="https://web.facebook.com/hammad.haider.96387" target={"_blank"}  rel={"noreferrer"}>
                 <i className="bx bxl-facebook-square text-2xl text-white hover:text-yellow"></i>
               </a>
-              <a href="https://dribbble.com/ERROR_4O4" className="pl-4" target={"_blank"}>
+              <a href="https://dribbble.com/ERROR_4O4" className="pl-4" target={"_blank"}  rel={"noreferrer"}>
                 <i className="bx bxl-dribbble text-2xl text-white hover:text-yellow"></i>
               </a>
-              <a href="https://www.linkedin.com/in/hammad-haider-711a19246/" className="pl-4" target={"_blank"}>
+              <a href="https://www.linkedin.com/in/hammad-haider-711a19246/" className="pl-4" target={"_blank"}  rel={"noreferrer"}>
                 <i className="bx bxl-linkedin text-2xl text-white hover:text-yellow"></i>
               </a>
-              <a href="https://www.instagram.com/hammadhaider.404" className="pl-4" target={"_blank"}>
+              <a href="https://www.instagram.com/hammadhaider.404" className="pl-4" target={"_blank"}  rel={"noreferrer"}>
                 <i className="bx bxl-instagram text-2xl text-white hover:text-yellow"></i>
               </a>
             </div>
